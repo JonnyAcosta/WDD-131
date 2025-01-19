@@ -5,6 +5,8 @@ body{
     margin: 0;
     padding: 0;
     line-height: 1.5;
+    background-color: white;
+    color: black;
 }
 
 header.title {
@@ -16,12 +18,14 @@ header.title h1{
     letter-spacing: 2px;
     font-size: 32px;
     margin-bottom: 10px;
+    
 }
 
 header.title h2{
     font-size:24px;
     color: #006EB6;
     margin-top: 0;
+    border-bottom: 1px solid #cccccc;
 }
 
 p{
@@ -31,7 +35,7 @@ p{
 
 .list{
     text-align: left;
-    margin: 20px 0;
+    margin-left: 40px ;
     padding-left:20px;
 }
 
@@ -57,4 +61,27 @@ footer .logo{
     text-align: center;
     border: 1px solid #ccc;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.intro {
+    font-style: italic;
+}
+
+body.dark{
+    background-color: #333;
+    color:white;
+}
+
+body.dark header.title h2{
+    color: #006EB6;
+    border-bottom: 1px solid #444;
+}
+
+body.dark .site{
+    border: 1px solid #444;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+
+body.dark a{
+    color:#006EB6;
 }
