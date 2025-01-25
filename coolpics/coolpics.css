@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: Mooli, san-serif;
+    }
+body{
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    background-color: lightgray;
+    color: var(--text-dark);
+    margin:0;
+    padding: 0;
+
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1{
+    font-family: var(--secondary-font);
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover{
+    color: var(--accent-color);
+}
+
+main{
+    padding: 20px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 10px 20px;
+    bottom: 0;
+    width:100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; 
+    }
+
+    header h1 {
+        font-size: 2em; 
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; 
+    }
+
+    
+    .menu-button {
+        background: none;
+        border: none;
+        color: var(--text-light);
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .menu-button:hover {
+        color: var(--accent-color); 
+    }
+}
+
+
+@media (min-width: 700px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    nav ul li {
+        display: inline-block; 
+        margin-right: 30px;
+    }
+
+    .menu-button {
+        display: none; 
+    }
+}
