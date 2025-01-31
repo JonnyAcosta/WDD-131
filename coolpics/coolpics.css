@@ -61,6 +61,7 @@ main{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 15px;
     margin-top: 20px;
+    place-items: center;
 }
 
 figure{
@@ -92,8 +93,11 @@ footer p {
 }
 
 
-
-@media (max-width: 600px) {
+/*
+    you don't need this media query wrapper
+    it'll just be the default "small" styling
+*/
+/* @media (max-width: 600px) { */
     body {
         font-size: 16px; 
     }
@@ -124,12 +128,16 @@ footer p {
     .menu-button:hover {
         color: var(--accent-color); 
     }
-}
+/* } */
 
 
 @media (min-width: 700px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr); 
+    }
+
+    nav {
+        display: none;
     }
 }
 
@@ -146,5 +154,9 @@ footer p {
 
     .menu-button {
         display: none; 
+    }
+
+    nav {
+        display: block;
     }
 }
