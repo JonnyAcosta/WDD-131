@@ -91,6 +91,46 @@ footer p {
     font-size: 1em;
 }
 
+.hide{
+    display: none;
+}
+
+#menu{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.viewer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75); 
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    place-items: center;
+    z-index: 10; 
+    padding: 20px;
+}
+
+.close-viewer{
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    align-self: start;
+    justify-self: end;
+}
+
+.viewer img{
+    max-width: 90%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
 
 
 @media (max-width: 600px) {
@@ -142,6 +182,12 @@ footer p {
     nav ul li {
         display: inline-block; 
         margin-right: 30px;
+    }
+
+    #menu{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
     }
 
     .menu-button {
