@@ -1,0 +1,130 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a3b18a;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.nav{
+    background-color: #dad7cd;
+    padding: 15px 0;
+    border-top: 2px solid #888;
+    border-bottom: 2px solid #888;
+    max-width: 300px; 
+    margin: 0 auto;
+}
+
+.nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.nav ul{
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    justify-content: end;
+    list-style: end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.nav ul li{
+    text-align: center;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.book{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+}
+
+.sidebar{
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #c2c5aa;
+}
+.book-title{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.book-image {
+    width: 200px;
+    height: 250px;
+    background-color: #edf2f4;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.sidebar::before {
+    content: "Filter form will go here";
+    display: block;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px; 
+    left: 10px;
+    background: #fff;
+    color: #000;
+    padding: 8px 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid black;
+    transition: top 0.3s ease-in-out;
+}
+
+.skiptocontent a:focus {
+    top: 10px; 
+}
+article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; 
+}
+
+.article p strong {
+    font-size: 20px; 
+}
+
+.article p {
+    text-align: right; 
+    line-height: 1.4; 
+    margin: 5px 0; 
+}
+
+.article-details {
+    border-right: 2px solid #ddd; 
+    padding-right: 15px; 
+    margin-right: 20px; 
+}
+
+.article-title {
+    margin-top: 0; 
+}
