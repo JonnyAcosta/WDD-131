@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="recipes.css">
+    <script src="recipes.js" defer></script>
+    <script src="main.js" defer></script>
+
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Discover delicious recipes with our Recipe Book. Find and share your favorite dishes!">
+    <meta property="og:image" content="https://example.com/images/recipe-featured.jpg">
+    <meta property="og:url" content="https://example.com/recipe-book">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Recipe Book">
+    <meta name="twitter:description" content="Discover delicious recipes with our Recipe Book. Find and share your favorite dishes!">
+    <meta name="twitter:image" content="https://example.com/images/recipe-featured.jpg">
+</head>
+<body>
+    <header>
+        <img src="images/recipe-book.png" alt="Recipe Book">
+        <h1>Recipe Book</h1>
+    </header>
+
+    <main>
+        <section class="search">
+            <label for="search">Find a Reciple!</label>
+            <input type="text" id="search" placeholder="Search for a recipe">
+            <button type="sumbit">Search</button>
+        </section>
+
+        <section class="recipe">
+            <img src ="images/apple-crisp.jpg" alt="Recipe Image">
+            <div class="tag">
+                <span class="tag">dessert</span>
+                <span class="tag">tag2</span>
+            </div>
+            <h2>Apple Crisp</h2>
+            <span class="rating" role="img" aria-label="Rating: 4 out of 5">
+                <span aria-hidden="true" class="icon-star">⭐️</span>
+                <span aria-hidden="true" class="icon-star">⭐️</span>
+                <span aria-hidden="true" class="icon-star">⭐️</span>
+                <span aria-hidden="true" class="icon-star">⭐️</span>
+                <span aria-hidden="true" class="icon-star-empty"></span>
+            </span>
+            <p>Apple Crisp is a classic fall dessert that is easy to make and perfect for sharing. It has a delicious apple filling and a crisp crumble topping.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023</p>
+        <p style="font-size: 0.6em;"><a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a></p>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+    </footer>
+    
+</body>
+</html>

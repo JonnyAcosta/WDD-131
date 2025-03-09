@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
+ :root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Amatic SC";
+ }
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ body{
+    font-family: var(--primary-font);
+    background-color: var(--text-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding: 10px;
+ }
+
+ header{
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    gap: 10px;
+ }
+
+ header img {
+    height: 50px;
+ }
+
+ h1 {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+ }
+
+ .search {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+ }
+
+ .search input{
+    padding: 8px;
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    border-radius: 5px;
+ }
+ .search button {
+    padding: 8px;
+    background: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    color: var(--text-light);
+    border-radius: 5px;
+}
+
+ .recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+
+ }
+
+ .recipe img {
+    max-width: 100%;
+    border-radius: 5px;
+ }
+
+ .tag{
+    display:inline-block;
+    background: var(--secondary-color);
+    color: var(--text-light);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+ }
+
+ .tags{
+    margin: 10px 0;
+ }
+
+ .rating {
+    margin: 5px 0;
+    font-size: 1.5em;
+ }
+
+ .recipe p {
+    display: none;
+ }
+
+ footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+ }
+
+ footer p {
+    margin-bottom: 5px;
+ }
+
+ .social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+ }
+
+ .social img {
+    width: 30px;
+    height: 30px;
+ }
+
+ @media (min-width: 768px) {
+    .recipe {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .recipe p {
+        display: block;
+    }
+}
