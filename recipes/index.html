@@ -28,28 +28,16 @@
 
     <main>
         <section class="search">
-            <label for="search">Find a Reciple!</label>
-            <input type="text" id="search" placeholder="Search for a recipe">
-            <button type="sumbit">Search</button>
+            <label for="search">Find a Recipe!</label>
+            <input type="text" id="search-input" placeholder="Search for a recipe">
+            <button id="search-button" type="submit">Search</button>
         </section>
-
-        <section class="recipe">
-            <img src ="images/apple-crisp.jpg" alt="Recipe Image">
-            <div class="tag">
-                <span class="tag">dessert</span>
-                <span class="tag">tag2</span>
-            </div>
-            <h2>Apple Crisp</h2>
-            <span class="rating" role="img" aria-label="Rating: 4 out of 5">
-                <span aria-hidden="true" class="icon-star">⭐️</span>
-                <span aria-hidden="true" class="icon-star">⭐️</span>
-                <span aria-hidden="true" class="icon-star">⭐️</span>
-                <span aria-hidden="true" class="icon-star">⭐️</span>
-                <span aria-hidden="true" class="icon-star-empty"></span>
-            </span>
-            <p>Apple Crisp is a classic fall dessert that is easy to make and perfect for sharing. It has a delicious apple filling and a crisp crumble topping.</p>
-        </section>
+    
+        <!-- Container where JavaScript will insert recipes -->
+        <section id="recipes-container"></section>
     </main>
+    
+
     <footer>
         <p>&copy; 2023</p>
         <p style="font-size: 0.6em;"><a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a></p>
